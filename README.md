@@ -8,6 +8,13 @@ In this homework assignment, you are going to implement a linked list in C. This
 
 ## Detailed Instructions
 
+To-do items for this homework:
+1. Define a data structure to store linked list elements
+2. Create a `head` pointer to point to the beginning of your list
+3. Write a `listAdd` function that adds new elements to your list
+4. Write a `listRemove` function that removes elements from your list
+5. Call `listAdd` and `listRemove` from `main` to demonstrate that they work
+
 ### Defining the Data Structure
 
 First, you're going to want to define a data structure for elements in your linked list. Do this in a header file.
@@ -54,4 +61,15 @@ Write a function called `listRemove` that removes an element from the list:
 
 
 The argument to this function is an element that should be removed from the list. `listRemove` should unlink it from the list, connecting the element before `element` to the element after it.
+
+## Grading
+
+| Task                                                        | Points |
+|-------------------------------------------------------------|--------|
+| Working Makefile                                            | 5      |
+| Data structure defined correctly                            | 3      |
+| List head defined correctly                                 | 2      |
+| `listAdd` function works                                    | 15     |
+| `listRemove` function works                                 | 15     |
+| Demo `listAdd` and `listRemove` by calling them from `main` | 10     |
 
