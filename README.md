@@ -9,15 +9,15 @@ In this homework assignment, you are going to implement a linked list in C. This
 ## Detailed Instructions
 
 To-do items for this homework:
-1. Define a data structure to store linked list elements
+1. Define a data structure to store linked list elements. Include linkage pointers (`next` and `prev`) and at least one payload.
 2. Create a `head` pointer to point to the beginning of your list
-3. Write a `listAdd` function that adds new elements to your list
+3. Write a `listAdd` function that adds new elements to your list **in ascending order according to the value of the element's payload.**
 4. Write a `listRemove` function that removes elements from your list
 5. Call `listAdd` and `listRemove` from `main` to demonstrate that they work
 
 ### Defining the Data Structure
 
-First, you're going to want to define a data structure for elements in your linked list. Do this in a header file.
+First, you're going to want to define a data structure for elements in your linked list. Do this in a header file. Your data structure should have `next` and `prev` pointers and some payload. For the payload, you can create a single integer.
 
     struct linkedListElement {
         struct linkedListElement *next; // Ptr to next element in list
@@ -64,12 +64,13 @@ The argument to this function is an element that should be removed from the list
 
 ## Grading
 
-| Task                                                        | Points |
-|-------------------------------------------------------------|--------|
-| Working Makefile                                            | 5      |
-| Data structure defined correctly                            | 3      |
-| List head defined correctly                                 | 2      |
-| `listAdd` function works                                    | 15     |
-| `listRemove` function works                                 | 15     |
-| Demo `listAdd` and `listRemove` by calling them from `main` | 10     |
+| Task                                                                   | Points |
+|------------------------------------------------------------------------|--------|
+| Working Makefile                                                       | 5      |
+| Data structure defined correctly                                       | 3      |
+| List head defined correctly                                            | 2      |
+| `listAdd` function works                                               | 10     |
+| `listAdd` adds elements in order according to the value of the payload | 10     |
+| `listRemove` function works                                            | 15     |
+| Demo `listAdd` and `listRemove` by calling them from `main`            | 5      |
 
